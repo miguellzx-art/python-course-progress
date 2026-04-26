@@ -17,10 +17,11 @@ while True:
     choice = " "
     while choice not in "YN":
         choice = input("Do you want to continue? (Y/N) ").strip().upper()[0]
+    
     if choice == "N":
         break
 
-print(f"{' GAME OVER ':=^30}")
+print(f"{' GAME OVER ':=^30}") 
 print(f"The total amount spent is US${total:.2f}")
 print(f"{tothousand} products cost more than US$1000")
 print(f"The cheapest product is {cheapest} which costs US${lower:.2f}")
